@@ -40,3 +40,66 @@ a {
     color-scheme: dark;
   }
 }
+
+/* PostList styling in src/app/globals.css */
+
+.postlist {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;           /* Remove default padding */
+  margin: 0;            /* Remove default margin */
+}
+
+.postlist li {
+  margin-bottom: 1rem;  /* Space between list items */
+}
+
+.postlist article {
+  padding: 1rem;        /* Add padding inside each article */
+  border: 1px solid #ccc; /* Add a border around each article */
+  border-radius: 5px;   /* Round the corners of the border */
+  background-color: #f9f9f9; /* Light background color */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.postlist article:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.postlist h2 {
+  margin: 0;            /* Remove default margin from h2 */
+  font-size: 1.5rem;    /* Increase font size for better visibility */
+  color: #333;          /* Set a color for the title */
+}
+
+/* Pagination.js styling in src/app/globals.css */
+
+/* Pagination Styles */
+.pagination {
+  display: flex;                /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Space out the items */
+  align-items: center;         /* Center items vertically */
+  padding: 1rem;              /* Add padding around the pagination */
+  background-color: #f1f1f1;  /* Light background color for the pagination */
+  border-radius: 5px;         /* Round the corners */
+  margin-top: 1rem;           /* Space above the pagination */
+}
+
+.pagination li {
+  list-style-type: none;      /* Remove default list styling */
+  margin: 0;                  /* Remove default margin */
+}
+
+.pagination a {
+  text-decoration: none;       /* Remove underline from links */
+  color: #0070f3;             /* Link color */
+  font-weight: bold;          /* Make links bold */
+}
+
+.pagination a:hover {
+  text-decoration: underline;  /* Underline on hover */
+}
+
+.pagination span {
+  color: #666;                /* Color for disabled text */
+  font-weight: normal;        /* Normal weight for disabled text */
+}
