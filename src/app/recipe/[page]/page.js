@@ -3,16 +3,13 @@ import { Config } from "@/lib/Config";
 
 import PostList from '@/components/PostList';
 
+// This is run once at build time and it generates all the static routes for every page needed, based on the total number of pages
 export async function generateStaticParams({ params }) {
     const totalPages = Math.ceil(10 / Config.pagination.pageSize);
 
     const paths = [];
 
-    /**
-     * Start from page 2, so we don't replicate /recipe
-     * which is page 1
-     */
-    for (let page = 2; page <= totalPages; page++) {
+    for (let page = 1; page <= totalPages; page++) {
         paths.push({ page: page.toString() });
     }
 

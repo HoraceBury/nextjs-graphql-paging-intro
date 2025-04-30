@@ -24,9 +24,8 @@ export default class ContentfulApi {
   }
 
   static async getPaginatedPostSummaries(page) {
-    const skipMultiplier = page === 1 ? 0 : page - 1;
-    const skip =
-      skipMultiplier > 0 ? Config.pagination.pageSize * skipMultiplier : 0;
+    // Build the GraphQL query
+    const skip = Config.pagination.pageSize * (page - 1);
 
     const query = `{
       recipeCollection(limit: ${Config.pagination.pageSize}, skip: ${skip}, order: title_ASC) {

@@ -4,7 +4,7 @@ import Pagination from "./Pagination";
 export default function PostList(props) {
   const { posts, currentPage, totalPages } = props;
 
-  // Calculate the disabled states of the next and previous links
+  {/* Calculates whther the next/previous pagination buttons should be disabled */}
   const nextDisabled = parseInt(currentPage, 10) === parseInt(totalPages, 10);
   const prevDisabled = parseInt(currentPage, 10) === 1;
 
@@ -21,6 +21,8 @@ export default function PostList(props) {
           </li>
         ))}
       </ol>
+
+      {/* Using a Pagination component to navigate to different pages */}
       <Pagination
         totalPages={totalPages}
         currentPage={currentPage}

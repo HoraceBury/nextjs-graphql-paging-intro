@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Pagination(props) {
     const { totalPages, currentPage, prevDisabled, nextDisabled } = props;
 
+    // Dynamically calculates the correct URL for next/prev buttons based on current page
     const prevPageUrl =
         currentPage === "2"
             ? "/recipe"
