@@ -14,7 +14,6 @@ export async function generateStaticParams({ params }) {
     }
 
     return paths;
-
 }
 
 export default async function RecipeIndexPage({params}) {
