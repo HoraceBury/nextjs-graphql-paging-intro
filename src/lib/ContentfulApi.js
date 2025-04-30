@@ -28,7 +28,7 @@ export default class ContentfulApi {
     const skip = Config.pagination.pageSize * (page - 1);
 
     const query = `{
-      recipeCollection(limit: ${Config.pagination.pageSize}, skip: ${skip}, order: title_ASC) {
+      recipeCollection(limit: ${Config.pagination.pageSize}, skip: ${skip}) {
         total
         items {
           sys {
