@@ -11,7 +11,7 @@ export default function Pagination(props) {
     return (
         <ol className="pagination">
             <li>
-                {prevDisabled && <span>Previous page</span>}
+                {prevDisabled && <span></span>}
                 {!prevDisabled && (
                     <Link href={prevPageUrl}>
                         Previous page
@@ -22,7 +22,7 @@ export default function Pagination(props) {
                 Page {currentPage} of {totalPages}
             </li>
             <li>
-                {nextDisabled && <span>Next page</span>}
+                {nextDisabled && <span></span>}
                 {!nextDisabled && (
                     <Link href={nextPageUrl}>
                         Next page
