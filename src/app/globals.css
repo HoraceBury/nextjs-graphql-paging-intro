@@ -98,8 +98,3 @@ a {
 .pagination a:hover {
   text-decoration: underline;  /* Underline on hover */
 }
-
-.pagination span {
-  color: #666;                /* Color for disabled text */
-  font-weight: normal;        /* Normal weight for disabled text */
-}
